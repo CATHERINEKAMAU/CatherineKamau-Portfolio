@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catherine Kamau | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e6f2ff);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 6px solid #ffffff44;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .section {
+      padding: 3rem 10%;
+    }
+    .section h2 {
+      color: #2575fc;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+    }
+    .card a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.button {
+      background: #2575fc;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background: #1b4db3;
+    }
+
+    .footer {
+      text-align: center;
+      background: #e6f2ff;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .contact p a {
+      color: #2575fc;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Catherine Kamau</h1>
+  <p>Data Analyst | IT Support | Digital Marketer</p>
+</header>
+
+<section class="section">
+  <h2>👩‍💻 About Me</h2>
+  <p>
+    I'm passionate about using technology to solve real-world problems. With a background in Business Information Technology and experience in data analytics, AI, IT support, and digital marketing, I enjoy building meaningful digital solutions.
+  </p>
+</section>
+
+<section class="section">
+  <h2>🚀 Projects</h2>
+  <div class="card">
+    <a href="./Projects/AI_Chatbot_Project/README.md">🤖 AI Chatbot – BCG Forage GenAI Simulation</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>📊 Dashboards</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel Icon" />
+      <a href="./Dashboards/Dashboard%20Data%20(HEROES.xlsx" target="_blank">Heroes Campaign Dashboard</a>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel Icon" />
+      <a href="./Dashboards/MCU%20DASHBOARD.xlsx" target="_blank">MCU Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🎨 Posters</h2>
+  <div class="card-grid">
+    <div class="card"><img src="./Posters/BLUECOVER FATHER'S DAY.png" alt=""><a href="#">Bluecover – Father's Day</a></div>
+    <div class="card"><img src="./Posters/MADARAKA DAY BLUECOVER 4.png" alt=""><a href="#">Bluecover – Madaraka Day</a></div>
+    <div class="card"><img src="./Posters/MAESTRO FATHER'S DAY2.png" alt=""><a href="#">Maestroville – Father's Day</a></div>
+    <div class="card"><img src="./Posters/MAESTRO MADARAKA 4.png" alt=""><a href="#">Maestroville – Madaraka Day</a></div>
+    <div class="card"><img src="./Posters/training poster.jpg" alt=""><a href="#">Training Campaign Poster</a></div>
+    <div class="card"><img src="./Posters/Women in Tech Poster.jpg" alt=""><a href="#">Women in Tech Poster</a></div>
+    <div class="card"><img src="./Posters/Women in Tech.jpg" alt=""><a href="#">Women in Tech Graphic</a></div>
+    <div class="card"><img src="./Posters/UNDERSEA.png" alt=""><a href="#">Undersea Poster</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🎓 Certifications</h2>
+  <a class="button" href="./Certifications/BCG-FORAGE GEN AI CERTIFICATE.pdf" target="_blank">View BCG Forage Certificate</a>
+</section>
+
+<section class="section">
+  <h2>📄 Resume</h2>
+  <a class="button" href="./CV/CatherineKamau_Resume.pdf" target="_blank">Download My CV</a>
+</section>
+
+<section class="section contact">
+  <h2>📬 Contact</h2>
+  <p>Email: <a href="mailto:catherine.kamau381@gmail.com">catherine.kamau381@gmail.com</a></p>
+  <p>Phone: <a href="tel:+254701029671">+254701029671</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/catherine-kamau-98b83a326" target="_blank">linkedin.com/in/catherine-kamau</a></p>
+</section>
+
+<div class="footer">
+  © 2025 Catherine Kamau. Built with ❤️ using GitHub Pages.
+</div>
+
+</body>
+</html>
