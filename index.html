@@ -2,170 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Catherine Kamau | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #ff5851;
-      color: #333;
-    }
-    header {
-      background: white;
-      padding: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #ff5851;
-    }
-    nav a {
-      color: #333;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      background: white;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-    .hero img {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border: 5px solid #ff5851;
-    }
-    .hero h2 {
-      margin-top: 1rem;
-      font-size: 2rem;
-    }
-    .hero p {
-      color: #555;
-      max-width: 600px;
-      margin: auto;
-    }
-    .section {
-      padding: 3rem 2rem;
-      background: white;
-      margin-top: 2rem;
-    }
-    .section h3 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #ff5851;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #f8f8f8;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 6px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #1e1e1e;
-      color: white;
-    }
-    .social a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
+  <header class="bg-danger text-white text-center py-3">
     <h1>Catherine Kamau</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#posters">Posters</a>
-      <a href="#dashboards">Dashboards</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+    <nav class="mt-2">
+      <a href="index.html" class="btn btn-light btn-sm">Home</a>
+      <a href="posters.html" class="btn btn-light btn-sm">Posters</a>
+      <a href="dashboards.html" class="btn btn-light btn-sm">Dashboards</a>
+      <a href="certifications.html" class="btn btn-light btn-sm">Certifications</a>
+      <a href="contact.html" class="btn btn-light btn-sm">Contact</a>
     </nav>
   </header>
 
-  <section class="hero" id="about">
-    <img src="ERIN.jpg" alt="Catherine Kamau">
-    <h2>Full Stack Enthusiast & Data Analyst</h2>
-    <p>I specialize in data visualization, IT support, and creative digital marketing. I turn insights into impactful visuals and deliver digital solutions that drive business growth.</p>
+  <section class="hero text-center p-5 bg-white fade-in">
+    <img src="ERIN.jpg" class="rounded-circle border border-danger" style="width: 160px;" alt="Profile">
+    <h2 class="mt-3">Hi, I'm Catherine Kamau</h2>
+    <p>Data Analyst | IT Support | Digital Marketer</p>
   </section>
 
-  <section class="section" id="posters">
-    <h3>My Posters</h3>
-    <div class="grid">
-      <div class="card">
-        <img src="Posters/BLUECOVER FATHER'S DAY.png" alt="Father's Day Poster">
-        <p>Bluecover Father's Day</p>
+  <section class="what-i-do fade-in">
+    <h3>What I Do</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-3 feature">
+        <i class="fas fa-chart-line"></i>
+        <h5>Data Analysis</h5>
+        <p>Transform raw data into insights using Excel, Power BI, and dashboards.</p>
       </div>
-      <div class="card">
-        <img src="Posters/MAESTRO FATHER'S DAY2.png" alt="Maestro Poster">
-        <p>Maestroville Father's Day</p>
+      <div class="col-md-3 feature">
+        <i class="fas fa-database"></i>
+        <h5>Data Cleaning</h5>
+        <p>Prepare datasets for meaningful analysis and reporting.</p>
       </div>
-      <div class="card">
-        <img src="Posters/UNDERSEA.png" alt="Undersea Poster">
-        <p>Undersea Theme Campaign</p>
+      <div class="col-md-3 feature">
+        <i class="fas fa-bullhorn"></i>
+        <h5>Digital Marketing</h5>
+        <p>Create and execute campaigns across digital platforms and social media.</p>
+      </div>
+      <div class="col-md-3 feature">
+        <i class="fas fa-headset"></i>
+        <h5>IT Support</h5>
+        <p>Assist with tech support and system troubleshooting to keep workflows smooth.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="dashboards">
-    <h3>Excel Dashboards</h3>
-    <div class="grid">
-      <div class="card">
-        <p>Heroes Campaign Dashboard</p>
-        <a href="Dashboards/Dashboard Data (HEROES).xlsx">Download</a>
-      </div>
-      <div class="card">
-        <p>Marvel MCU Dashboard</p>
-        <a href="Dashboards/MCU DASHBOARD.xlsx">Download</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="certifications">
-    <h3>Certifications</h3>
-    <div class="grid">
-      <div class="card">
-        <p>BCG Forage Gen AI Simulation</p>
-        <a href="Certifications/BCG-FORAGE GEN AI CERTIFICATE.pdf">View Certificate</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <h3>Contact Me</h3>
-    <p class="text-center">📧 Email: <a href="mailto:catherine.kamau381@gmail.com">catherine.kamau381@gmail.com</a></p>
-    <p class="text-center">📱 Phone: <a href="tel:+254701029671">+254 701 029 671</a></p>
-    <p class="text-center">🔗 LinkedIn: <a href="https://www.linkedin.com/in/catherine-kamau-98b83a326" target="_blank">linkedin.com/in/catherine-kamau</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Catherine Kamau. Built with 💻 & ❤️</p>
-    <div class="social">
-      <a href="https://github.com/CATHERINEKAMAU" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/erincadance" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2025 Catherine Kamau</p>
   </footer>
 
 </body>
